@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		412CE3692B93C09200AD4BD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412CE3682B93C09200AD4BD4 /* ViewController.swift */; };
+		412CE3692B93C09200AD4BD4 /* GachaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412CE3682B93C09200AD4BD4 /* GachaController.swift */; };
 		413CA21F2B93B836003AD961 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CA21E2B93B836003AD961 /* SwiftUIView.swift */; };
 		41E160622B93B5910030FBE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E160612B93B5910030FBE9 /* AppDelegate.swift */; };
 		41E160642B93B5910030FBE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E160632B93B5910030FBE9 /* SceneDelegate.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		412CE3682B93C09200AD4BD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		412CE3682B93C09200AD4BD4 /* GachaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GachaController.swift; sourceTree = "<group>"; };
 		413CA21E2B93B836003AD961 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		41E1605E2B93B5910030FBE9 /* WicHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WicHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E160612B93B5910030FBE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 				41E160632B93B5910030FBE9 /* SceneDelegate.swift */,
 				41E160652B93B5910030FBE9 /* HomeController.swift */,
 				41E160672B93B5910030FBE9 /* Main.storyboard */,
-				412CE3682B93C09200AD4BD4 /* ViewController.swift */,
+				412CE3682B93C09200AD4BD4 /* GachaController.swift */,
 				41E1606A2B93B5940030FBE9 /* Assets.xcassets */,
 				41E1606C2B93B5940030FBE9 /* LaunchScreen.storyboard */,
 				41E1606F2B93B5940030FBE9 /* Info.plist */,
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				412CE3692B93C09200AD4BD4 /* ViewController.swift in Sources */,
+				412CE3692B93C09200AD4BD4 /* GachaController.swift in Sources */,
 				41E160662B93B5910030FBE9 /* HomeController.swift in Sources */,
 				41E160622B93B5910030FBE9 /* AppDelegate.swift in Sources */,
 				413CA21F2B93B836003AD961 /* SwiftUIView.swift in Sources */,

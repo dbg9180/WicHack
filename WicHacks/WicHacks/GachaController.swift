@@ -7,12 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GachaController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func gachaPull(_ sender: Any) {
+        
+        
+    }
+    
 }
