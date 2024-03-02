@@ -9,6 +9,14 @@ import UIKit
 
 class HomeController: UIViewController {
 
+    
+    @IBAction func Gacha(_ sender: Any) {
+        
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createCalendar()
@@ -39,4 +47,10 @@ extension HomeController: UICalendarViewDelegate {
     func calendarView(_ calendarView: UICalendarView, decorationFor dateComponents: DateComponents) -> UICalendarView.Decoration? {
         return nil
     }
+
+    
+    
+    
+    
+    
 }
