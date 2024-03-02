@@ -17,15 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3j-68-fO2">
-                                <rect key="frame" x="35" y="156" width="113" height="71"/>
+                                <rect key="frame" x="16" y="714" width="113" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" title="Gacha">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="Gacha:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMM-wQ-4Ae"/>
                                     <segue destination="GFq-n8-Q6r" kind="show" identifier="gacha" id="gpV-Ct-mnn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJ8-QI-u7L">
+                                <rect key="frame" x="257" y="732" width="128" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Meds Tracker">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Drugs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooq-xS-ASv"/>
+                                    <segue destination="L5l-rr-1sJ" kind="show" id="4Wm-7s-FtL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,13 +110,27 @@
                     <view key="view" contentMode="scaleToFill" id="TBR-bn-8GR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="P4d-4A-aTV">
+                                <rect key="frame" x="53" y="132" width="218" height="59"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58S-GZ-1YY" customClass="theCalendar" customModule="WicHacks" customModuleProvider="target">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="hBE-Y3-8I5" kind="embed" id="yUx-la-cAa"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1Ig-jL-xEA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="RMV-05-yKP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLu-vv-GRK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76" y="-656"/>
+            <point key="canvasLocation" x="1809.9236641221373" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A9x-qq-ESi">
@@ -123,6 +149,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSq-uJ-Dzj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="947" y="-681"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Sv6-ec-uGq">
+            <objects>
+                <viewController id="hBE-Y3-8I5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pUJ-qi-wTm">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBC-8U-4hz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408" y="396"/>
         </scene>
     </scenes>
     <resources>
