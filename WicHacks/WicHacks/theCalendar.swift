@@ -6,33 +6,24 @@
 //
 
 import Foundation
+import SwiftUI
 import UIKit
+
 
 class theCalendar: UIView {
     
-    let calView = UICalendarView()
-    
-    let gregorianCalendar = Calendar(identifier: .gregorian)
-    
-    func config() {
-        
-        calView.calendar = gregorianCalendar
-        
-        calView.locale = Locale(identifier: "zh_TW")
-        
-        calView.fontDesign = .rounded
-        
-        // Set the date to display.
-        calView.visibleDateComponents = DateComponents(
-            calendar: gregorianCalendar,
-            year: 2024,
-            month: 2,
-            day: 1
-        )
-    }
-    
-    config()
-    
+//    let calendarView = UICalendarView()
+//    
+//    let gregorianCalendar = Calendar(identifier: .gregorian)
+//    
+//    
+//    calendarView.calendar = gregorianCalendar
+//    
+//    calendarView.locale = Locale(identifier: "zh_TW")
+//    
+//    calendarView.fontDesign = .rounded
+//    
+//    calendarView.delegate = self
     
 }
 
