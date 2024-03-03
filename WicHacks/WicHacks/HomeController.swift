@@ -13,13 +13,13 @@ import SwiftUI
 
 class HomeController: UIViewController {
 
-    
+
     @IBAction func Gacha(_ sender: Any) {
-        
-        
+
     }
     
     
+<<<<<<< HEAD
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,4 +57,10 @@ extension HomeController: UICalendarViewDelegate {
     
     
     
+=======
+    @IBAction func Drugs(_ sender: Any) {
+        let barcodeView = UIHostingController(rootView: WicHacks.Barcode())
+        self.present(barcodeView, animated: true, completion: nil)
+    }
+>>>>>>> f52b5cc045037d8f6bad29e642918c0c2d494120
 }
