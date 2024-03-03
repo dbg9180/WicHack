@@ -11,39 +11,29 @@ import SwiftUI
 
 class DrugsController: UIViewController{
 
-    @IBAction func Barcode(_ sender: Any) {
-        let barcodeView = UIHostingController(rootView: WicHacks.Barcode())
-        self.present(barcodeView, animated: true, completion: nil)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
 
+//
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as UIViewController
         destinationVC.title = "Drugs"
     }
 
-    let calendarView = UICalendarView()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var body: some View {
+            NavigationView {
+                VStack {
+                    Text("Welcome to My App")
+                    NavigationLink(destination: WicHacks.Barcode()) {
+                        Text("Scan Barcode")
+                    }
+                }
+                .navigationTitle("Home")
+            }
+        }
 
-        // Add calendarView to your view hierarchy
-        view.addSubview(calendarView)
 
-        // Customize the calendar view (optional)
-        let gregorianCalendar = Calendar(identifier: .gregorian)
-        calendarView.calendar = gregorianCalendar
-        calendarView.locale = Locale(identifier: "en_US") // Set your desired locale
-        calendarView.fontDesign = .rounded
-        // ... (other customizations)
-
-        // Set the visible date (optional)
-        let visibleDateComponents = DateComponents(
-            calendar: gregorianCalendar,
-            year: 2024,
-            month: 2,
-            day: 1
-        )
-        calendarView.visibleDateComponents = visibleDateComponents
-
-    }
 }

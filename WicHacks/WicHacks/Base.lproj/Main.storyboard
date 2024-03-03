@@ -36,7 +36,7 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="Drugs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooq-xS-ASv"/>
+                                    <action selector="Drugs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i71-Kj-15S"/>
                                     <segue destination="L5l-rr-1sJ" kind="show" id="4Wm-7s-FtL"/>
                                 </connections>
                             </button>
@@ -113,18 +113,6 @@
                     <view key="view" contentMode="scaleToFill" id="TBR-bn-8GR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyk-gn-y9E">
-                                <rect key="frame" x="281" y="177" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="Barcode:" destination="L5l-rr-1sJ" eventType="touchUpInside" id="hYp-va-6FQ"/>
-                                    <segue destination="9Hc-Ge-12c" kind="show" identifier="" id="57Q-oy-CM6"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1Ig-jL-xEA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -133,22 +121,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLu-vv-GRK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1809.9236641221373" y="3.5211267605633805"/>
-        </scene>
-        <!--Barcode Controller-->
-        <scene sceneID="5iw-2S-Ocv">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CjC-gO-IHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="9Hc-Ge-12c" customClass="BarcodeController" customModule="WicHacks" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Atb-aK-Zbv" customClass="Barcode" customModule="WicHacks" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="2wd-gY-pg1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hRa-xh-iUR"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="2744" y="16"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="vUF-59-pnr">
