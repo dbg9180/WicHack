@@ -12,33 +12,39 @@ import Combine
 
 
 struct Barcode: View {
-  
 
-    @State var isPresentingScanner = false
-    @State var scannedCode: String = "Scan a QR Code"
 
-    var scannerSheet : some View {
-        CodeScannerView(
-            codeTypes: [.qr],
-            completion: {result in 
-            if case let .success(code) = result{
-                self.scannedCode = code.string
-                self.isPresentingScanner = false
-            }}
-        )
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as UIViewController
+        destinationVC.title = "Barcode"
     }
 
-    var body: some View {
-        VStack (spacing:10){
-            Text("Scan QR Code to continue")
-            Button("Scan QR Code"){
-                self.isPresentingScanner = true
-            }
-            .sheet(isPresented: $isPresentingScanner){
-                self.scannerSheet
+
+        @State var isPresentingScanner = false
+        @State var scannedCode: String = "Scan a QR Code"
+
+        var scannerSheet : some View {
+            CodeScannerView(
+                codeTypes: [.qr],
+                completion: {result in
+                if case let .success(code) = result{
+                    self.scannedCode = code.string
+                    self.isPresentingScanner = false
+                }}
+            )
+        }
+
+        var body: some View {
+            VStack (spacing:10){
+                Text("Scan QR Code to continue")
+                Button("Scan QR Code"){
+                    self.isPresentingScanner = true
+                }
+                .sheet(isPresented: $isPresentingScanner){
+                    self.scannerSheet
+                }
             }
         }
-    }
 
 }
 

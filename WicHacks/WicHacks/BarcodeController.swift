@@ -6,27 +6,31 @@
 //
 
 
-
 import UIKit
 import SwiftUI
 import Foundation
 
-
+import CodeScanner
 
 class BarcodeController: UIViewController {
-    
-    var barcode = Barcode()
-    
-     override func viewDidLoad() {
+
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as UIViewController
-        destinationVC.title = "Barcode"
-    }
-    
-    
+    var body: some View {
+            NavigationView {
+                VStack {
+                    Text("Welcome to My App")
+                    NavigationLink(destination: Barcode()) {
+                        Text("Scan Barcode")
+                    }
+                }
+                .navigationTitle("Home")
+            }
+        }
+
+
 }
 
