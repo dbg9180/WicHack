@@ -23,7 +23,7 @@ class GachaController: UIViewController {
     @IBAction func gachaPull(_ sender: Any) {
         
         image1.isHidden = false
-        image1.image = UIImage(named: "dog1")
+        image1.image = images.randomElement()!
 //        image1.animationImages = animation
 //        image1.animationDuration = 0.5
 //        image1.startAnimating()
