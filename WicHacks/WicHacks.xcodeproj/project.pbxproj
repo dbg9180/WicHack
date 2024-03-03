@@ -197,7 +197,8 @@
 				41E1606D2B93B5940030FBE9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+			path = WicHacks;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
