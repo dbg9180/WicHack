@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 class LoginController: UIViewController {
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-              
+
         //Looks for single or multiple taps.
          let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
 
@@ -30,9 +30,5 @@ class LoginController: UIViewController {
     }
  
     @IBAction func Login(_ sender: Any) {
-        
-        
     }
-    
-    
 }

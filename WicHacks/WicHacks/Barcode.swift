@@ -25,7 +25,7 @@ struct Barcode: View {
 
         var scannerSheet : some View {
             CodeScannerView(
-                codeTypes: [.qr],
+                codeTypes: [.qr, .upce],
                 completion: {result in
                 if case let .success(code) = result{
                     self.scannedCode = code.string
