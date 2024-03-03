@@ -73,10 +73,6 @@
                                     <action selector="gachaPull:" destination="GFq-n8-Q6r" eventType="touchUpInside" id="JJN-Wq-a7I"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EDW-PQ-0fx">
-                                <rect key="frame" x="34" y="205" width="92" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w7P-RW-yx7">
                                 <rect key="frame" x="158" y="205" width="96" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -93,15 +89,22 @@
                                 <rect key="frame" x="158" y="338" width="96" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kl-D1-GWe">
+                                <rect key="frame" x="34" y="205" width="92" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Hu-xD-QqV"/>
                         <color key="backgroundColor" red="0.51108775564003917" green="0.49558413445550842" blue="0.8098718523979187" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="C29-Ed-ZAj"/>
+                    <connections>
+                        <outlet property="image1" destination="6Kl-D1-GWe" id="Gvs-fY-Gqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNg-fm-RwH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120" y="4"/>
+            <point key="canvasLocation" x="119.84732824427481" y="3.5211267605633805"/>
         </scene>
         <!--Drugs Controller-->
         <scene sceneID="1vK-6a-KVQ">
@@ -147,6 +150,34 @@
             </objects>
             <point key="canvasLocation" x="2744" y="16"/>
         </scene>
+        <!--Login Controller-->
+        <scene sceneID="vUF-59-pnr">
+            <objects>
+                <viewController id="h4I-j3-302" customClass="LoginController" customModule="WicHacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sBf-tp-fjV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIv-rz-pLd">
+                                <rect key="frame" x="120" y="532" width="152" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <action selector="Login:" destination="h4I-j3-302" eventType="touchUpInside" id="J8j-ot-lVp"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ZZF-JQ-HNk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="itz-9I-qtW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lm7-mI-jUE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kHS-HM-8DA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.244274809160306" y="-707.04225352112678"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="A9x-qq-ESi">
             <objects>
@@ -158,7 +189,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dhv-zL-OqP"/>
+                        <segue destination="h4I-j3-302" kind="relationship" relationship="rootViewController" id="lKb-Os-xvI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSq-uJ-Dzj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

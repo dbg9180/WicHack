@@ -14,8 +14,16 @@ class GachaController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    let images = [UIImage(named:"KittywTable")]
+    
+    @IBOutlet weak var image1: UIImageView!
+    
+
     @IBAction func gachaPull(_ sender: Any) {
         
+        image1.isHidden = false
+        image1.image = UIImage(named: "KittywTable")
+        image1.animationImages = []
         
     }
     
@@ -23,4 +31,5 @@ class GachaController: UIViewController {
         let destinationVC = segue.destination as UIViewController
         destinationVC.title = "Gacha"
     }
+    
 }
