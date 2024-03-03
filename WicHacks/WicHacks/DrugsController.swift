@@ -16,8 +16,6 @@ class DrugsController: UIViewController{
     }
     
     
-
-    
     let calendarView = UICalendarView()
     
     override func viewDidLoad() {
