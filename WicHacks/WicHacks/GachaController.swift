@@ -29,13 +29,14 @@ class GachaController: UIViewController {
 
     @IBAction func gachaPull(_ sender: Any) {
         
-        if p > 50 {
+        if p >= 50 {
             
             image1.isHidden = false
             image1.image = images.randomElement()!
             //        image1.animationImages = animation
             //        image1.animationDuration = 0.5
             //        image1.startAnimating()
+            HomeController.points.points -= 50
             
         } else {
             
