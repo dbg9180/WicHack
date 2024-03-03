@@ -24,6 +24,10 @@
                                 <rect key="frame" x="113" y="123" width="166" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="AJg-qr-95s">
+                                <rect key="frame" x="0.0" y="605" width="349" height="264"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
@@ -37,6 +41,7 @@
     </scenes>
     <resources>
         <image name="Image" width="98" height="31.666666030883789"/>
+        <image name="Image 1" width="221.33332824707031" height="146"/>
         <image name="icon" width="341.33334350585938" height="341.33334350585938"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
