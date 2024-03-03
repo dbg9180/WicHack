@@ -10,9 +10,11 @@ import UIKit
 class GachaController: UIViewController {
     
     var p = HomeController.points.points
+    @IBOutlet weak var PointsCounter: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        PointsCounter.text = String(p)
         // Do any additional setup after loading the view.
     }
     
@@ -23,9 +25,10 @@ class GachaController: UIViewController {
     
     @IBOutlet weak var ErrorMsg: UILabel!
     
-    @IBOutlet weak var PointsCounter: UILabel!
     
+
     @IBAction func gachaPull(_ sender: Any) {
+        
         if p > 50 {
             
             image1.isHidden = false
@@ -39,9 +42,10 @@ class GachaController: UIViewController {
             ErrorMsg.isHidden = false
             
         }
-
         
     }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as UIViewController

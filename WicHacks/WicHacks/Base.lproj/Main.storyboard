@@ -38,7 +38,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="Drugs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i71-Kj-15S"/>
-                                    <segue destination="L5l-rr-1sJ" kind="show" id="4Wm-7s-FtL"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Calendar" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-EF-YTw">
@@ -61,21 +60,12 @@
                                     <color key="baseForegroundColor" systemColor="linkColor"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dp1-eW-Xbx">
-                                <rect key="frame" x="314" y="93" width="71" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3j-68-fO2">
-                                <rect key="frame" x="10" y="83" width="72" height="46"/>
+                                <rect key="frame" x="7" y="83" width="83" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Gacha">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -87,6 +77,15 @@
                                 <rect key="frame" x="76" y="603" width="240" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dp1-eW-Xbx">
+                                <rect key="frame" x="302" y="89" width="97" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -139,21 +138,23 @@
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="pharmacuteicals" translatesAutoresizingMaskIntoConstraints="NO" id="5r8-KR-wxH">
-                                <rect key="frame" x="31" y="614" width="394" height="291"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="pharmacuteicals" translatesAutoresizingMaskIntoConstraints="NO" id="5r8-KR-wxH">
+                                <rect key="frame" x="31" y="632" width="394" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ely-Tr-bPZ">
-                                <rect key="frame" x="96" y="552" width="201" height="72"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC2-Sg-JMO">
+                                <rect key="frame" x="115" y="563" width="163" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemBlueColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Press Me!" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Press Me!" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="21"/>
                                     <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="gachaPull:" destination="GFq-n8-Q6r" eventType="touchUpInside" id="JJN-Wq-a7I"/>
+                                    <action selector="gachaPull:" destination="GFq-n8-Q6r" eventType="touchUpInside" id="xRY-a1-Ypy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -163,7 +164,7 @@
                     <navigationItem key="navigationItem" id="C29-Ed-ZAj"/>
                     <connections>
                         <outlet property="ErrorMsg" destination="UHl-sy-Qz4" id="98E-Oz-Zl0"/>
-                        <outlet property="PointsCounter" destination="9HD-0B-XGg" id="ybh-0M-Hbn"/>
+                        <outlet property="PointsCounter" destination="9HD-0B-XGg" id="tXZ-d9-XMe"/>
                         <outlet property="image1" destination="6Kl-D1-GWe" id="Gvs-fY-Gqf"/>
                     </connections>
                 </viewController>
@@ -309,9 +310,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -14,60 +14,70 @@ import Combine
 struct Barcode: View {
 
 
-    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as UIViewController
-        destinationVC.title = "Barcode"
-    }
+    @State var isPresentingScanner = false
+        @State var scannedCode: String = "Scan a QR Code"
+        @State var scanResult: String?
+        @State var shouldExitView = false
 
-    @State private var initialCode: String?
-
-        @State var isPresentingScanner = false
-        @State var scannedCode: String = "Scan a QR Code to take your pill!"
-    @State var scanResult:String = "initial"
-
+        @State var initialCode: String?
 
         var scannerSheet : some View {
             CodeScannerView(
-                codeTypes: [.qr, .upce],
+                codeTypes: [.qr],
                 completion: {result in
                     if case let .success(code) = result{
                         if let initialCode = initialCode {
+                            // Compare against initial code
                             if code.string == initialCode {
                                 scanResult = "match"
-                                
+                                shouldExitView = true;
                             } else {
-                                scanResult = "no"
+                                scanResult = "not a match"
                             }
                         } else {
+                            // Set initial code if it's empty
                             initialCode = code.string
                         }
-                        self.scannedCode = code.string
-                        //                    Text(code.string)
-                        self.isPresentingScanner = false
+                        // Update scanned code
+                        scannedCode = code.string
+                        isPresentingScanner = false
+
                     }
                 }
             )
         }
-    
 
         var body: some View {
-            VStack (spacing:10){
-                Text(scanResult)
-                Button("Scan QR Code"){
-                    self.isPresentingScanner = true
-                }
-                .sheet(isPresented: $isPresentingScanner){
-                    self.scannerSheet
-                }
+            if shouldExitView {
+                HomeController.points.points += 10
+                return AnyView (
+                    VStack {
+                        Image("Congrats")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                        Text("Congragulations")
+                    }
+                )
+            }
+            else {
+                return AnyView(
+                VStack (spacing:10){
+                    Text(scanResult ?? "")
+                    Button("Scan QR Code"){
+                        isPresentingScanner = true
+                    }
+                    .sheet(isPresented: $isPresentingScanner){
+                        scannerSheet
+                    }
+                })
             }
         }
 
-}
+    }
 
-struct Barcode_Previews: PreviewProvider {
+    struct Barcode_Previews: PreviewProvider {
     static var previews: some View {
         Barcode()
     }
+
 }
-
-
