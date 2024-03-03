@@ -61,7 +61,7 @@
                                 <rect key="frame" x="0.0" y="742" width="403" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6w-Zu-acl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog1" translatesAutoresizingMaskIntoConstraints="NO" id="V6w-Zu-acl">
                                 <rect key="frame" x="76" y="637" width="240" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -254,6 +254,7 @@
         <image name="MediMinder2" width="216" height="29.666666030883789"/>
         <image name="MediMinder3" width="129.66667175292969" height="18"/>
         <image name="circles" width="262" height="111.33333587646484"/>
+        <image name="dog1" width="70" height="73.333335876464844"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -28,7 +28,13 @@ class HomeController: UIViewController {
     
     @IBOutlet weak var HomeCharacter: UIImageView!
     
-
+    func changeImage() {
+        
+        
+        
+    }
+    
+ 
     
 
     

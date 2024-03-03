@@ -14,7 +14,7 @@ class GachaController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    let images = [UIImage(named:"KittywTable"), UIImage(named:"Birdie"), UIImage(named:"dog1")]
+    let images = [UIImage(named:"KittywTable"), UIImage(named:"Birdie"), UIImage(named:"dog1"), UIImage(named: "kitty")]
     let animation = Array(arrayLiteral: UIImage(named: "dog1")!, UIImage(named: "dog2")!)
     
     @IBOutlet weak var image1: UIImageView!
