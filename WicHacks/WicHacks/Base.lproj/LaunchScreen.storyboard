@@ -12,7 +12,7 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -20,12 +20,12 @@
                                 <rect key="frame" x="25" y="255" width="342" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="h6j-2q-sEu">
-                                <rect key="frame" x="113" y="123" width="166" height="110"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="cloud things" translatesAutoresizingMaskIntoConstraints="NO" id="1r3-fU-W71">
+                                <rect key="frame" x="-6" y="657" width="317" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="AJg-qr-95s">
-                                <rect key="frame" x="0.0" y="605" width="349" height="264"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="MediMinder1" translatesAutoresizingMaskIntoConstraints="NO" id="4oA-v0-qDv">
+                                <rect key="frame" x="110" y="141" width="173" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -40,8 +40,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="98" height="31.666666030883789"/>
-        <image name="Image 1" width="221.33332824707031" height="146"/>
+        <image name="MediMinder1" width="98" height="31.666666030883789"/>
+        <image name="cloud things" width="221.33332824707031" height="146"/>
         <image name="icon" width="341.33334350585938" height="341.33334350585938"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
