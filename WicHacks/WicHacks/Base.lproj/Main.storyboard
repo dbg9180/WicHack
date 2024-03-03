@@ -118,7 +118,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="Barcode:" destination="L5l-rr-1sJ" eventType="touchUpInside" id="hYp-va-6FQ"/>
-                                    <segue destination="9Hc-Ge-12c" kind="show" identifier="Barcode" id="57Q-oy-CM6"/>
+                                    <segue destination="9Hc-Ge-12c" kind="show" identifier="" id="57Q-oy-CM6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -131,11 +131,12 @@
             </objects>
             <point key="canvasLocation" x="1809.9236641221373" y="3.5211267605633805"/>
         </scene>
-        <!--Barcode-->
+        <!--Barcode Controller-->
         <scene sceneID="5iw-2S-Ocv">
             <objects>
-                <viewController id="9Hc-Ge-12c" customClass="Barcode" customModule="WicHacks" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Atb-aK-Zbv">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CjC-gO-IHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="9Hc-Ge-12c" customClass="BarcodeController" customModule="WicHacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Atb-aK-Zbv" customClass="Barcode" customModule="WicHacks" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="2wd-gY-pg1"/>
@@ -143,7 +144,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="hRa-xh-iUR"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CjC-gO-IHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2744" y="16"/>
         </scene>

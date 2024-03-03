@@ -11,17 +11,17 @@ import CodeScanner
 import Combine
 
 
-class Barcode: View {
+struct Barcode: View {
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as UIViewController
         destinationVC.title = "Barcode"
     }
     
     
         @State var isPresentingScanner = false
-        var scannedCode: String = "Scan a QR Code"
+        @State var scannedCode: String = "Scan a QR Code"
 
         var scannerSheet : some View {
             CodeScannerView(
@@ -35,8 +35,8 @@ class Barcode: View {
         }
 
         var body: some View {
-            ZStack {
-                Text("bean")
+            VStack (spacing:10){
+                Text("Scan QR Code to continue")
                 Button("Scan QR Code"){
                     self.isPresentingScanner = true
                 }
