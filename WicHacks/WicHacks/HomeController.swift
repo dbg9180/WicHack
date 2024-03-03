@@ -12,6 +12,15 @@ import SwiftUI
 
 
 class HomeController: UIViewController {
+    
+    struct points {
+        static var points = 0
+    }
+    
+    
+    @IBAction func Gacha(_ sender: Any) {
+    }
+    
 
     @IBOutlet weak var HomeCharacter: UIImageView!
 
@@ -23,7 +32,7 @@ class HomeController: UIViewController {
             // Do any additional setup after loading the view.
         }
 
-    @IBAction func signUp( sender: Any) {
+    @IBAction func signUp(_ sender: Any) {
         startAnimatingImage()
         self.performSegue(withIdentifier: "showNextView", sender: self)
 
@@ -42,6 +51,11 @@ class HomeController: UIViewController {
         // Start animation
         HomeCharacter.startAnimating()
     }
+    
+    @IBAction func Drugs(_ sender: Any) {
+            let barcodeView = UIHostingController(rootView: WicHacks.Barcode())
+            self.present(barcodeView, animated: true, completion: nil)
+        }
 
 }
 

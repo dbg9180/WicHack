@@ -9,6 +9,8 @@ import UIKit
 
 class GachaController: UIViewController {
     
+    var p = HomeController.points.points
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,14 +21,24 @@ class GachaController: UIViewController {
     
     @IBOutlet weak var image1: UIImageView!
     
-
+    @IBOutlet weak var ErrorMsg: UILabel!
+    
+    @IBOutlet weak var PointsCounter: UILabel!
+    
     @IBAction func gachaPull(_ sender: Any) {
-        
-        image1.isHidden = false
-        image1.image = images.randomElement()!
-//        image1.animationImages = animation
-//        image1.animationDuration = 0.5
-//        image1.startAnimating()
+        if p > 50 {
+            
+            image1.isHidden = false
+            image1.image = images.randomElement()!
+            //        image1.animationImages = animation
+            //        image1.animationDuration = 0.5
+            //        image1.startAnimating()
+            
+        } else {
+            
+            ErrorMsg.isHidden = false
+            
+        }
 
         
     }
