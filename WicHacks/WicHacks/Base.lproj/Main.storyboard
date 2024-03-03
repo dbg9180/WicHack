@@ -36,7 +36,7 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="Drugs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooq-xS-ASv"/>
+                                    <action selector="Drugs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i71-Kj-15S"/>
                                     <segue destination="L5l-rr-1sJ" kind="show" id="4Wm-7s-FtL"/>
                                 </connections>
                             </button>
