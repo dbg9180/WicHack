@@ -11,7 +11,7 @@ import CodeScanner
 import Combine
 
 
-class Barcode: UIViewController {
+class Barcode: View {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -46,4 +46,10 @@ class Barcode: UIViewController {
             }
         }
 
+}
+
+struct Barcode_Previews: PreviewProvider {
+    static var previews: some View {
+        Barcode()
+    }
 }
