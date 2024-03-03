@@ -15,12 +15,14 @@ import Foundation
 
 class BarcodeController: UIViewController {
     
+    var barcode = Barcode()
+    
      override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as UIViewController
         destinationVC.title = "Barcode"
     }
